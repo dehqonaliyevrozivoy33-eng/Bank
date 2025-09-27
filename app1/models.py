@@ -16,6 +16,8 @@ class BankCard(models.Model):
     balance = models.DecimalField(max_digits=12, decimal_places=2, default=0)
     expiry_date = models.DateField()
 
+
+
     def __str__(self):
         return f"{self.customer.full_name} - {self.card_number}"
 
